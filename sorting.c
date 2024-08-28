@@ -24,7 +24,7 @@ void bubble_sort(int* a, int length) {
 
 void bubble_sort_conventional(int* a, int length) {
   for(int i = 0; i < length-1; i++) {
-    for(int j = 1; j < length-i-1; j++) {
+    for(int j = 0; j < length-i-1; j++) {
       if(a[j] > a[j+1]) {
         swap(a+i, a+j);
       }
@@ -39,7 +39,7 @@ void array_print(int* a, int length) {
 }
 
 int main() {
-  int arr[6] = {4, 3, 1};
+  int arr[6] = {4, 3, 1, 2, 5, 7};
   bubble_sort_conventional(arr, 6);
   array_print(arr, 6);
 
